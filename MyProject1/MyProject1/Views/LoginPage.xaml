@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProject1.Views.LoginPage"
+             BackgroundColor="DeepSkyBlue"
+             Title="Log In">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Please Log In."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+        <Label Text="NOTE: Password is case sensitive."
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"/>
+        <Entry x:Name="passwordEditor"
+            Placeholder="Enter password... (Case Sensitive)"
+            IsSpellCheckEnabled="False"
+           IsPassword="True"/>
+        <Button x:Name="btnLogin"
+                Text="Save"
+                HeightRequest="50"
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="MediumOrchid"
+                Clicked="btnLogin_Clicked"/>
+    </StackLayout>
+</ContentPage>

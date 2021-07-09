@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProject1.Views.QuickNoteEntry"
+             BackgroundColor="DeepSkyBlue"
+             Title="New Quick Note">
+
+    <StackLayout Margin="50">
+
+        <Editor x:Name="newNoteEditor"
+                Placeholder="Enter your new quick note here..."
+                BackgroundColor="LightCoral"
+                AutoSize="TextChanges"
+                IsSpellCheckEnabled="True"
+                />
+
+        <StackLayout Orientation="Horizontal">
+            
+            <Button x:Name="btnSave" 
+                    Text="Save"
+                    HeightRequest="50"
+                    WidthRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="MediumOrchid"
+                    Clicked="btnSave_Clicked"
+                    />
+
+
+            <Button x:Name="btnDelete"
+                    Text="Delete"
+                    HeightRequest="50"
+                    WidthRequest="100"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="MediumOrchid"
+                    Clicked="btnDelete_Clicked"
+                    />
+
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>
